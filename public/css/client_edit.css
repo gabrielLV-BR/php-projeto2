@@ -1,0 +1,39 @@
+label {
+    font-size: 1.4rem !important;
+    color: #888 !important;
+    margin-top: 1rem;
+}
+
+h2 + div > label:first-child {
+    margin-top: 0;
+}
+
+input:not([type=submit]), select {
+    font-size: 1.6rem !important;
+    padding: 0.8rem !important;
+    color: #777 !important;
+}
+
+form h2 {
+    position: relative;
+    top: 0;
+    left: -2rem;
+}
+
+div.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.row * {
+    width: fit-content;
+    display: block;
+}
+
+@media screen and (max-width: 660px) {
+    form h2 {
+        position: initial;
+    }
+}

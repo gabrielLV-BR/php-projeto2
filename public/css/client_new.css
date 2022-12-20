@@ -1,0 +1,15 @@
+div.form-check{
+    margin-left: 2rem !important;
+}
+
+form h2 {
+    position: relative;
+    top: 0;
+    left: -2rem;
+}
+
+@media screen and (max-width: 660px) {
+    form h2 {
+        position: initial;
+    }
+}

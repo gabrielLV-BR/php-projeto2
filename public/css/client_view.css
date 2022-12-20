@@ -1,0 +1,29 @@
+small {
+    font-size: 1.5rem;
+}
+
+b {
+    font-size: 2rem;
+}
+
+.plano {
+    padding: 0.4rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.Bronze {
+    background-color: #cc6633;
+    background-image: linear-gradient(to bottom right, #cc6633 60%, #fa7a4a 60%, #fa7a4a 70%, #cc6633 70%);
+}
+
+.Silver {
+    background-color: #aaaaaa;
+    background-image: linear-gradient(to bottom right, #aaaaaa 60%, #bbbbbb 60%, #bababa 70%, #aaaaaa 70%);
+}
+
+.Golden {
+    background-color: gold;
+    background-image: linear-gradient(to bottom right, gold 60%, #f9f295 60%, #f9f295 70%, gold 70%);
+}
