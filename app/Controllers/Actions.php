@@ -27,6 +27,13 @@ class Actions extends BaseController
         return redirect()->to("/");
     }
 
+
+    public function delete_dependent($id) {
+        $model = model("App\Models\DependenteModel");
+        $model->delete($id);
+        return redirect()->to("/");
+    }
+
     public function create_client() {
         $data = [
             "nome" => $this->request->getPost("nome"),
@@ -41,6 +48,18 @@ class Actions extends BaseController
         ];
 
         $model = model("App\Models\ClientModel");
+        $model->insert($data);
+        return redirect()->to("/");
+    }
+
+    public function create_dependent() {
+        $model = model("App\Models\DependenteModel");
+
+        $data = [
+            "nome" => $this->request->getPost("nome"),
+            "titular" => $this->request->getPost("titular")
+        ];
+
         $model->insert($data);
         return redirect()->to("/");
     }

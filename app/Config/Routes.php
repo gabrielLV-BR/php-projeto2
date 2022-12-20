@@ -41,6 +41,9 @@ $routes->get('/cliente/(:num)', 'Client::index/$1');
 $routes->get('/cliente/editar/(:num)', 'Client::edit/$1');
 $routes->get('/cliente/novo/', 'Client::create');
 $routes->get('/cliente/excluir/(:num)', 'Actions::delete_client/$1');
+$routes->get('/dependente/excluir/(:num)', "Actions::delete_dependent/$1");
+$routes->get('/dependente/novo/(:num)', "Dependent::create/$1");
+$routes->post('/dependente/novo', 'Actions::create_dependent');
 $routes->post('/cliente/editar', 'Actions::update_client');
 $routes->post('/cliente/novo', 'Actions::create_client');
 

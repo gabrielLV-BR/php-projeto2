@@ -1,20 +1,25 @@
 label {
-    font-size: 1.4rem !important;
+    font-size: 1rem !important;
     color: #888 !important;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 }
 
 h2 + div > label:first-child {
     margin-top: 0;
 }
 
+.client-delete img {
+    width: 1.5rem !important;
+}
+
 input:not([type=submit]), select {
-    font-size: 1.6rem !important;
+    font-size: 1rem !important;
     padding: 0.8rem !important;
-    color: #777 !important;
+    color: #444 !important;
 }
 
 form h2 {
+    font-size: 1.5rem;
     position: relative;
     top: 0;
     left: -2rem;
@@ -24,12 +29,35 @@ div.row {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 0.5rem;
 }
 
 div.row * {
     width: fit-content;
     display: block;
+}
+
+ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    gap: 0.6rem;
+}
+
+ul li img {
+    width: 2rem;
+    transition: transform 200ms ease;
+}
+
+ul li img:hover {
+    transform: rotate(10deg);
+}
+
+#submit {
+    margin: 2rem 0;
 }
 
 @media screen and (max-width: 660px) {
